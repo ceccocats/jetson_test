@@ -1,6 +1,6 @@
 apt update
 apt install -y python3-serial python3-can python3-smbus
-apt install -y libeigen3-dev libyaml-cpp-dev cmake wget
+apt install -y libeigen3-dev libyaml-cpp-dev cmake wget stress
 
 wget http://github.com/Kitware/CMake/releases/download/v3.19.3/cmake-3.19.3-Linux-aarch64.sh
 bash cmake-3.19.3-Linux-aarch64.sh --skip-license --prefix=/usr/local/
