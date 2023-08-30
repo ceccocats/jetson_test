@@ -7,8 +7,9 @@ import os.path
 import os
 import numpy as np
 
-vid = cv2.VideoCapture(0, cv2.CAP_V4L2)
+camID = sys.argv[1]
+vid = cv2.VideoCapture(camID, cv2.CAP_V4L2)
 while True:
     ret, frame = vid.read()
-    print("cam: ", np.shape(frame))
+    print("cam: ", camID, np.shape(frame))
 
